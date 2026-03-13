@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🚨 IMPORTANTE: Nuevos Canales de Contacto - Gocho Movie</title>
-    <meta name="description" content="Información urgente sobre nuevos canales de contacto para Gocho Movie - Netflix, Streaming y más servicios">
+    <title>Gocho Movie - Canales de Contacto</title>
+    <meta name="description" content="Canales oficiales de contacto de Gocho Movie. Netflix, Streaming y más servicios. Contáctanos por WhatsApp, Telegram o Instagram.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,311 +16,410 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e40af, #3730a3, #581c87);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            background: #f0f2f5;
             min-height: 100vh;
-            color: #fff;
-            overflow-x: hidden;
+            color: #1a1a2e;
         }
 
-        .emergency-header {
-            background: linear-gradient(90deg, #dc2626, #b91c1c);
-            padding: 15px;
+        /* ── Header ── */
+        .header {
+            background: linear-gradient(135deg, #1e3a5f, #2d5986);
+            padding: 30px 20px;
             text-align: center;
-            font-weight: bold;
-            font-size: 16px;
-            animation: pulse 2s infinite;
-            box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3);
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .main-card {
-            background: rgba(255, 255, 255, 0.95);
-            color: #1f2937;
-            border-radius: 20px;
-            padding: 40px;
-            margin: 20px 0;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-            text-align: center;
-        }
-
-        .old-number {
-            background: linear-gradient(45deg, #dc2626, #b91c1c);
             color: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin: 0 0 30px 0;
+        }
+
+        .header-logo {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
+        }
+
+        .header-tagline {
+            font-size: 14px;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
+        /* ── Info Banner ── */
+        .info-banner {
+            background: #fff3cd;
+            border-bottom: 1px solid #ffecb5;
+            padding: 14px 20px;
             text-align: center;
-            border: 3px solid rgba(239, 68, 68, 0.5);
-            animation: warning-pulse 2s ease-in-out infinite;
-            font-size: 18px;
-            font-weight: 600;
+            font-size: 14px;
+            color: #664d03;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
-        @keyframes warning-pulse {
-            0%, 100% { 
-                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
-            }
-            50% { 
-                box-shadow: 0 0 20px 10px rgba(239, 68, 68, 0.1);
-            }
+        .info-banner svg {
+            flex-shrink: 0;
         }
 
-        .logo {
-            font-size: 36px;
-            font-weight: 900;
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        /* ── Container ── */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+
+        /* ── Notice Card ── */
+        .notice-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .notice-card h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1a1a2e;
             margin-bottom: 10px;
         }
 
-        .status-urgent {
-            background: linear-gradient(45deg, #ef4444, #dc2626);
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            font-weight: bold;
-            margin: 20px auto;
-            display: inline-block;
-            animation: shake 0.5s ease-in-out infinite alternate;
+        .notice-card p {
+            font-size: 15px;
+            color: #5a6070;
+            line-height: 1.6;
+            max-width: 520px;
+            margin: 0 auto;
         }
 
-        @keyframes shake {
-            from { transform: translateX(-2px); }
-            to { transform: translateX(2px); }
+        .old-number-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 16px;
         }
 
-        h1 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #1f2937;
+        /* ── Section Title ── */
+        .section-title {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8a8fa0;
+            margin-bottom: 14px;
+            padding-left: 4px;
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+        /* ── Contact Cards ── */
+        .contact-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 28px;
         }
 
         .contact-card {
-            background: linear-gradient(135deg, #10b981, #059669);
-            color: white;
-            padding: 25px;
-            border-radius: 15px;
-            text-align: center;
-            transition: transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            background: white;
+            border-radius: 14px;
+            padding: 20px 22px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            transition: box-shadow 0.2s ease, transform 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
         }
 
         .contact-card:hover {
-            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transform: translateY(-1px);
         }
 
         .contact-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
+            width: 50px;
+            height: 50px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
         }
 
-        .contact-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 10px;
+        .contact-icon svg {
+            width: 26px;
+            height: 26px;
+            fill: white;
         }
 
-        .contact-info {
-            font-size: 18px;
+        .icon-whatsapp { background: #25d366; }
+        .icon-telegram { background: #0088cc; }
+        .icon-instagram { background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af); }
+        .icon-channel { background: #0088cc; }
+
+        .contact-body {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .contact-name {
+            font-size: 16px;
             font-weight: 600;
-            margin-bottom: 15px;
-            font-family: monospace;
+            color: #1a1a2e;
+            margin-bottom: 2px;
         }
 
-        .contact-btn {
-            background: white;
-            color: #059669;
-            padding: 10px 18px;
+        .contact-handle {
+            font-size: 14px;
+            color: #6b7280;
+            font-family: 'SF Mono', 'Fira Code', monospace;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 9px 16px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
             border: none;
-            border-radius: 20px;
-            font-weight: 600;
             cursor: pointer;
             text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s ease;
-            margin-right: 8px;
-            font-size: 13px;
+            transition: opacity 0.2s ease;
+            font-family: inherit;
         }
 
-        .contact-btn:hover {
-            background: #f0f9ff;
-            transform: scale(1.05);
+        .btn:hover {
+            opacity: 0.85;
         }
 
-        .copy-btn {
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid white;
+        .btn-primary {
             color: white;
-            padding: 10px 14px;
-            border-radius: 20px;
-            font-size: 11px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-weight: 600;
         }
 
-        .copy-btn:hover {
+        .btn-whatsapp { background: #25d366; }
+        .btn-telegram { background: #0088cc; }
+        .btn-instagram { background: #e1306c; }
+        .btn-channel { background: #0088cc; }
+
+        .btn-copy {
+            background: #f3f4f6;
+            color: #374151;
+            border: 1px solid #e5e7eb;
+        }
+
+        .btn-copy:hover {
+            background: #e5e7eb;
+        }
+
+        /* ── Services ── */
+        .services-card {
             background: white;
-            color: #059669;
+            border-radius: 16px;
+            padding: 24px 28px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            margin-bottom: 28px;
         }
 
-        .emergency-note {
-            background: linear-gradient(45deg, #f59e0b, #d97706);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            font-weight: 600;
-            text-align: center;
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px;
         }
 
+        .service-tag {
+            background: #f0f4ff;
+            color: #3b5998;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* ── Footer ── */
         .footer {
             text-align: center;
-            margin-top: 40px;
-            opacity: 0.8;
-            font-size: 14px;
+            padding: 20px;
+            font-size: 13px;
+            color: #9ca3af;
         }
 
-        .whatsapp-card {
-            background: linear-gradient(135deg, #25d366, #128c7e) !important;
+        .footer strong {
+            color: #6b7280;
         }
 
-        .telegram-card {
-            background: linear-gradient(135deg, #0088cc, #006699) !important;
-        }
-
-        .instagram-card {
-            background: linear-gradient(135deg, #e1306c, #fd1d1d) !important;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-            
-            .main-card {
-                padding: 25px;
-                margin: 10px 0;
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            .header {
+                padding: 24px 16px;
             }
 
-            .contact-grid {
-                grid-template-columns: 1fr;
+            .header-logo {
+                font-size: 26px;
             }
 
-            h1 {
-                font-size: 24px;
+            .notice-card {
+                padding: 22px 18px;
+            }
+
+            .notice-card h1 {
+                font-size: 19px;
+            }
+
+            .contact-card {
+                flex-wrap: wrap;
+                padding: 16px;
+            }
+
+            .contact-actions {
+                width: 100%;
+                margin-top: 8px;
+                padding-left: 66px;
+            }
+
+            .services-card {
+                padding: 20px 18px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .contact-actions {
+                padding-left: 0;
+                justify-content: flex-start;
             }
         }
     </style>
 </head>
 <body>
-    <div class="emergency-header">
-        🚨 ATENCIÓN: Información importante sobre nuestros canales de contacto
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-logo">Gocho Movie</div>
+        <div class="header-tagline">Tu servicio de streaming confiable</div>
+    </header>
+
+    <!-- Info Banner -->
+    <div class="info-banner">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="#664d03">
+            <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 2.5a.75.75 0 01.75.75v4a.75.75 0 01-1.5 0v-4A.75.75 0 018 3.5zM8 11a1 1 0 110-2 1 1 0 010 2z"/>
+        </svg>
+        <span>El número <strong>320-9838990</strong> no se encuentra disponible. Usa los canales de abajo para contactarnos.</span>
     </div>
 
+    <!-- Main Content -->
     <div class="container">
-        <div class="main-card">
-            <div class="old-number">
-                <strong>⚠️ Número Bloqueado:</strong> 320-9838990<br>
-                <small>Si este número no responde, usa los canales alternativos abajo</small>
+
+        <!-- Notice -->
+        <div class="notice-card">
+            <h1>Nuestros canales de contacto</h1>
+            <p>Puedes comunicarte con nosotros por cualquiera de estos medios. Estamos disponibles para atenderte y resolver tus dudas.</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="section-title">Canales disponibles</div>
+        <div class="contact-list">
+
+            <!-- WhatsApp -->
+            <div class="contact-card">
+                <div class="contact-icon icon-whatsapp">
+                    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/></svg>
+                </div>
+                <div class="contact-body">
+                    <div class="contact-name">WhatsApp</div>
+                    <div class="contact-handle">+58 412 072 4727</div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://wa.me/584120724727?text=Hola%20Gocho%20Movie,%20quisiera%20información." class="btn btn-primary btn-whatsapp">Abrir chat</a>
+                    <button class="btn btn-copy" onclick="copyToClipboard('+584120724727', this)">Copiar</button>
+                </div>
             </div>
 
-            <div class="logo">Gocho Movie</div>
-            <div class="status-urgent">🔴 CANALES ALTERNATIVOS ACTIVOS</div>
-            
-            <h1>Nuevos Canales de Contacto</h1>
-            <p style="font-size: 18px; color: #6b7280; margin-bottom: 30px;">
-                Mantente conectado con nosotros a través de nuestros canales alternativos
-            </p>
-
-            <div class="contact-grid">
-                <!-- WhatsApp -->
-                <div class="contact-card whatsapp-card">
-                    <div class="contact-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.051 3.488"/>
-                        </svg>
-                    </div>
-                    <div class="contact-title">WhatsApp Respaldo</div>
-                    <div class="contact-info">+58 4120724727</div>
-                    <a href="https://wa.me/584120724727?text=¡Hola%20Gocho%20Movie!%20Me%20comunico%20por%20el%20canal%20de%20emergencia." class="contact-btn">Abrir WhatsApp</a>
-                    <button class="copy-btn" onclick="copyToClipboard('+57 3209838990', this)">📋 Copiar</button>
+            <!-- Telegram -->
+            <div class="contact-card">
+                <div class="contact-icon icon-telegram">
+                    <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.36 8.627-.168.899-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.329-.913.49-1.302.481-.428-.008-1.252-.242-1.865-.442-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635a.79.79 0 01.465.14.457.457 0 01.171.325c.016.093.036.306.02.472z"/></svg>
                 </div>
-
-                <!-- Telegram -->
-                <div class="contact-card telegram-card">
-                    <div class="contact-icon">
-                        <svg width="48" height="48" viewBox="0 0 496 496" fill="currentColor">
-                            <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7q108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-title">Telegram</div>
-                    <div class="contact-info">@Gocho_Movie</div>
-                    <a href="https://t.me/Gocho_Movie" class="contact-btn">Abrir Telegram</a>
-                    <button class="copy-btn" onclick="copyToClipboard('@Gocho_Movie', this)">📋 Copiar</button>
+                <div class="contact-body">
+                    <div class="contact-name">Telegram</div>
+                    <div class="contact-handle">@Gocho_Movie</div>
                 </div>
-
-                <!-- Instagram -->
-                <div class="contact-card instagram-card">
-                    <div class="contact-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.40s-.644-1.44-1.439-1.40z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-title">Instagram</div>
-                    <div class="contact-info">@Gocho_Ventas</div>
-                    <a href="https://instagram.com/Gocho_Ventas" class="contact-btn">Abrir Instagram</a>
-                    <button class="copy-btn" onclick="copyToClipboard('@Gocho_Ventas', this)">📋 Copiar</button>
+                <div class="contact-actions">
+                    <a href="https://t.me/Gocho_Movie" class="btn btn-primary btn-telegram">Abrir chat</a>
+                    <button class="btn btn-copy" onclick="copyToClipboard('@Gocho_Movie', this)">Copiar</button>
                 </div>
+            </div>
 
-                <!-- Canal Telegram -->
-                <div class="contact-card telegram-card" style="background: linear-gradient(135deg, #0088cc, #005599) !important;">
-                    <div class="contact-icon">
-                        <svg width="48" height="48" viewBox="0 0 496 496" fill="currentColor">
-                            <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7q108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-title">Canal Telegram</div>
-                    <div class="contact-info">@gochomv</div>
-                    <a href="https://t.me/gochomv" class="contact-btn">Unirse al Canal</a>
-                    <button class="copy-btn" onclick="copyToClipboard('@gochomv', this)">📋 Copiar</button>
+            <!-- Instagram -->
+            <div class="contact-card">
+                <div class="contact-icon icon-instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                 </div>
+                <div class="contact-body">
+                    <div class="contact-name">Instagram</div>
+                    <div class="contact-handle">@Gocho_Ventas</div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://instagram.com/Gocho_Ventas" class="btn btn-primary btn-instagram">Ver perfil</a>
+                    <button class="btn btn-copy" onclick="copyToClipboard('@Gocho_Ventas', this)">Copiar</button>
+                </div>
+            </div>
+
+            <!-- Canal Telegram -->
+            <div class="contact-card">
+                <div class="contact-icon icon-channel">
+                    <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.36 8.627-.168.899-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.329-.913.49-1.302.481-.428-.008-1.252-.242-1.865-.442-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635a.79.79 0 01.465.14.457.457 0 01.171.325c.016.093.036.306.02.472z"/></svg>
+                </div>
+                <div class="contact-body">
+                    <div class="contact-name">Canal de Telegram</div>
+                    <div class="contact-handle">@gochomv</div>
+                </div>
+                <div class="contact-actions">
+                    <a href="https://t.me/gochomv" class="btn btn-primary btn-channel">Unirse</a>
+                    <button class="btn btn-copy" onclick="copyToClipboard('@gochomv', this)">Copiar</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Services -->
+        <div class="section-title">Nuestros servicios</div>
+        <div class="services-card">
+            <p style="font-size: 14px; color: #6b7280; margin-bottom: 4px;">Plataformas de streaming disponibles</p>
+            <div class="services-grid">
+                <span class="service-tag">Netflix</span>
+                <span class="service-tag">Disney+</span>
+                <span class="service-tag">HBO Max</span>
+                <span class="service-tag">Prime Video</span>
+                <span class="service-tag">Spotify</span>
+                <span class="service-tag">Y más</span>
             </div>
         </div>
 
-        <div class="emergency-note">
-            ⚡ <strong>PLAN DE CONTINGENCIA ACTIVO</strong><br>
-            Estos canales alternativos garantizan que siempre puedas acceder a nuestros servicios sin interrupciones
-        </div>
-
-        <div class="footer">
-            <p><strong>Gocho Movie</strong> - Tu servicio de streaming confiable 24/7</p>
-            <p>Última actualización: <span id="currentDate"></span></p>
-        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <p><strong>Gocho Movie</strong> &mdash; Servicio de streaming 24/7</p>
+            <p style="margin-top: 4px;">Actualizado: <span id="currentDate"></span></p>
+        </footer>
     </div>
 
     <script>
-        // Función simple de copia sin errores
         function copyToClipboard(text, button) {
             if (navigator.clipboard) {
                 navigator.clipboard.writeText(text).then(function() {
@@ -331,58 +433,46 @@
         }
 
         function fallbackCopy(text, button) {
-            // Método de respaldo
-            const textArea = document.createElement('textarea');
+            var textArea = document.createElement('textarea');
             textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-9999px';
             document.body.appendChild(textArea);
             textArea.select();
             try {
                 document.execCommand('copy');
                 showCopySuccess(button);
             } catch (err) {
-                alert('Copiado: ' + text);
+                alert('Número: ' + text);
             }
             document.body.removeChild(textArea);
         }
 
         function showCopySuccess(button) {
             if (!button) return;
-            
-            const originalText = button.textContent;
-            button.textContent = '✅ ¡Copiado!';
-            button.style.background = '#10b981';
-            button.style.color = 'white';
-            button.style.borderColor = '#10b981';
-            
-            setTimeout(() => {
-                button.textContent = originalText;
+            var original = button.textContent;
+            button.textContent = 'Copiado';
+            button.style.background = '#d1fae5';
+            button.style.color = '#065f46';
+            button.style.borderColor = '#a7f3d0';
+            setTimeout(function() {
+                button.textContent = original;
                 button.style.background = '';
                 button.style.color = '';
                 button.style.borderColor = '';
-            }, 2000);
+            }, 1500);
         }
 
-        // Actualizar fecha
-        function updateDate() {
-            const dateElement = document.getElementById('currentDate');
-            if (dateElement) {
-                const now = new Date();
-                const dateStr = now.toLocaleDateString('es-CO', {
+        document.addEventListener('DOMContentLoaded', function() {
+            var el = document.getElementById('currentDate');
+            if (el) {
+                var now = new Date();
+                el.textContent = now.toLocaleDateString('es-CO', {
                     year: 'numeric',
                     month: 'long',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
+                    day: 'numeric'
                 });
-                dateElement.textContent = dateStr;
             }
-        }
-
-        // Inicializar cuando se carga la página
-        document.addEventListener('DOMContentLoaded', function() {
-            updateDate();
-            // Auto-refresh cada 5 minutos
-            setInterval(updateDate, 300000);
         });
     </script>
 </body>
